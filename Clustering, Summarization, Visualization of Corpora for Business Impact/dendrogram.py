@@ -9,7 +9,7 @@ Created on Wed Dec 12 09:16:37 2018
 from scipy.cluster.hierarchy import ward, dendrogram
 
 linkage_matrix = ward(dist) #define the linkage_matrix using ward clustering pre-computed distances
-
+print("Dendograms")
 fig, ax = plt.subplots(figsize=(15, 20)) # set size
 ax = dendrogram(linkage_matrix, orientation="right", labels=titles);
 
